@@ -27,7 +27,7 @@ int main() {
     printf("Digite uma letra para representar o estado (A-H): ");
     scanf(" %c", &estado1);
 
-    printf("Digite o codigo da carta (ex: A01): ");
+    printf("Digite o codigo da carta (letra do estado + dois dígitos, ex: A01): ");
     scanf("%s", codigo1);
 
     printf("Digite o nome da cidade: ");
@@ -39,7 +39,7 @@ int main() {
     printf("Digite a area (km²): ");
     scanf("%f", &area1);
 
-    printf("Digite o PIB: ");
+    printf("Digite o PIB (em bilhões de reais): ");
     scanf("%f", &pib1);
 
     printf("Digite o numero de pontos turisticos: ");
@@ -52,7 +52,7 @@ int main() {
     printf("Digite o estado (A-H): ");
     scanf(" %c", &estado2);
 
-    printf("Digite o codigo da carta (ex: B02): ");
+    printf("Digite o codigo da carta (letra do estado + dois dígitos, ex: A01): ");
     scanf("%s", codigo2);
 
     printf("Digite o nome da cidade: ");
@@ -64,7 +64,7 @@ int main() {
     printf("Digite a area (km²): ");
     scanf("%f", &area2);
 
-    printf("Digite o PIB: ");
+    printf("Digite o PIB (em bilhões de reais): ");
     scanf("%f", &pib2);
 
     printf("Digite o numero de pontos turisticos: ");
@@ -77,9 +77,9 @@ int main() {
     printf("==Estado: %c\n", estado1);
     printf("==Codigo: %s\n", codigo1);
     printf("==Nome da Cidade: %s\n", cidade1);
-    printf("==Populacao: %d habitantesA\n", populacao1);
-    printf("==Area: %.2f km²\n", area1);
-    printf("==PIB: %.2f milhoes de reais\n", pib1);
+    printf("==Populacao: %d habitantes\n", populacao1);
+    printf("==Area: %f km²\n", area1);
+    printf("==PIB: %f bilhoes de reais\n", pib1);
     printf("==Numero de Pontos Turisticos: %d\n", pontosTuristicos1);
 
     printf(" \n");
@@ -88,8 +88,8 @@ int main() {
     printf("== Codigo: %s\n", codigo2);
     printf("== Nome da Cidade: %s\n", cidade2);
     printf("== Populacao: %d habitantes\n", populacao2);
-    printf("== Area: %.2f km²\n", area2);
-    printf("== PIB: %.2f milhoes de reais\n", pib2);
+    printf("== Area: %f km²\n", area2);
+    printf("== PIB: %f milhoes de reais\n", pib2);
     printf("== Numero de Pontos Turisticos: %d\n", pontosTuristicos2);
 
     return 0;
