@@ -6,7 +6,7 @@ int main() {
     //declarar as variáveis
     char estado1;
     char codigo1[4];
-    char cidade1[30]
+    char cidade1[30];
     int populacao1;
     float area1;
     float pib1;
@@ -14,7 +14,7 @@ int main() {
 
     char estado2;
     char codigo2[4];
-    char cidade2[30]
+    char cidade2[30];
     int populacao2; 
     float area2;
     float pib2;
@@ -33,13 +33,13 @@ int main() {
     printf("Digite o nome da cidade: ");
     scanf("%s", &cidade1);
 
-    printf("Digite a populacao: ");
+    printf("Digite a populacao (apenas números): ");
     scanf("%d", &populacao1);
 
-    printf("Digite a area (km²): ");
+    printf("Digite a area em km² (apenas números): ");
     scanf("%f", &area1);
 
-    printf("Digite o PIB (em bilhões de reais): ");
+    printf("Digite o PIB em milhões de reais (apenas números): ");
     scanf("%f", &pib1);
 
     printf("Digite o numero de pontos turisticos: ");
@@ -50,21 +50,21 @@ int main() {
     printf("== Cadastro da Carta 2 ==\n");
 
     printf("Digite o estado (A-H): ");
-    scanf(" %c", &estado2);
+    scanf("%c", &estado2);
 
     printf("Digite o codigo da carta (letra do estado + dois dígitos, ex: A01): ");
     scanf("%s", codigo2);
 
     printf("Digite o nome da cidade: ");
-    scanf(" %[^\n]", cidade2);
+    scanf("%s", &cidade2);
 
-    printf("Digite a populacao: ");
+    printf("Digite a populacao (apenas números): ");
     scanf("%d", &populacao2);
 
-    printf("Digite a area (km²): ");
+    printf("Digite a area em km² (apenas números): ");
     scanf("%f", &area2);
 
-    printf("Digite o PIB (em bilhões de reais): ");
+    printf("Digite o PIB em milhões de reais (apenas números): ");
     scanf("%f", &pib2);
 
     printf("Digite o numero de pontos turisticos: ");
@@ -78,8 +78,8 @@ int main() {
     printf("==Codigo: %s\n", codigo1);
     printf("==Nome da Cidade: %s\n", cidade1);
     printf("==Populacao: %d habitantes\n", populacao1);
-    printf("==Area: %f km²\n", area1);
-    printf("==PIB: %f bilhoes de reais\n", pib1);
+    printf("==Area: %.2f km²\n", area1);
+    printf("==PIB: %.2f bilhoes de reais\n", pib1);
     printf("==Numero de Pontos Turisticos: %d\n", pontosTuristicos1);
 
     printf(" \n");
@@ -88,8 +88,8 @@ int main() {
     printf("== Codigo: %s\n", codigo2);
     printf("== Nome da Cidade: %s\n", cidade2);
     printf("== Populacao: %d habitantes\n", populacao2);
-    printf("== Area: %f km²\n", area2);
-    printf("== PIB: %f milhoes de reais\n", pib2);
+    printf("== Area: %.2f km²\n", area2);
+    printf("== PIB: %.2f milhoes de reais\n", pib2);
     printf("== Numero de Pontos Turisticos: %d\n", pontosTuristicos2);
 
     return 0;
