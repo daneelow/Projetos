@@ -102,7 +102,7 @@ int main() {
     printf("== Nome da Cidade: %s\n", cidade2);
     printf("== Populacao: %d habitantes\n", populacao2);
     printf("== Area: %.2f km²\n", area2);
-    printf("== PIB: %.2f milhoes de reais\n", pib2);
+    printf("== PIB: %.2f bilhoes de reais\n", pib2);
     printf("== Numero de Pontos Turisticos: %d\n", pontosTuristicos2);
     printf("==Densidade Populacional: %.2f hab/km²\n", densidade2);
     printf("==PIB per Capita: %.2f reais\n", pibPerCapita2);
